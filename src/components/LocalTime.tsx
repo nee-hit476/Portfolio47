@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { AnimatedWrapper } from "./utils/AnimatedWrapper"
 
 const LocalTime = () => {
   const [time, setTime] = useState(new Date())
@@ -12,9 +13,9 @@ const LocalTime = () => {
   }, [])
 
   return (
-    <div>
+    <AnimatedWrapper>
       {time.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
-    </div>
+    </AnimatedWrapper>
   )
 }
 

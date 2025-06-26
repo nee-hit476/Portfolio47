@@ -1,5 +1,5 @@
 import {SectionTitle} from "../index"
-import {Skills as SkillsData} from "../Data/Skills"
+import {Skills as SkillsData} from "../../Data/Skills"
 
 const Skills = () => {
   return (

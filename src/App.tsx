@@ -2,7 +2,7 @@ import {LocalTime, Skills} from "./components"
 
 export default function App() {
   return (
-    <div className="min-h-screen min-w-screen flex justify-center items-center text-2xl bg-[#212121] text-white" >
+    <div className="min-h-screen min-w-screen flex justify-center items-center text-2xl bg-[#000000] text-white" >
       <Skills/>
     </div>
   )

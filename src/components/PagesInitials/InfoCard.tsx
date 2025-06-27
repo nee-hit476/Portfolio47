@@ -2,6 +2,8 @@ import React from "react"
 import { AnimatedWrapper } from "../utils/AnimatedWrapper"
 import {SectionTitle} from "../index"
 import { motion } from "framer-motion"
+import {ProfilePicture} from "../../Data/Personal"
+
 
 interface InfoCardProps {
     htmlContent?: string,
@@ -14,7 +16,15 @@ const InfoCard = ({htmlContent, children, className}: InfoCardProps) => {
 
     return (
     <AnimatedWrapper className={className} >
-            <SectionTitle title="About Me"/>
+                <img 
+                src={ProfilePicture} 
+                alt="pfp"
+                className="rounded-lg h-[100px] w-[200px] mr-7"
+                />
+            
+                <div>
+                    <SectionTitle title="About Me"/>
+
             {htmlContent ? (
                 <motion.div
                     layout
@@ -25,6 +35,7 @@ const InfoCard = ({htmlContent, children, className}: InfoCardProps) => {
             ) : (
                 children
             )}
+                </div>
     </AnimatedWrapper>
     )
 

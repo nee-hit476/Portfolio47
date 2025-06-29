@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import {AnimatedWrapper} from "../index"
 import {Available} from "../index"
 
-const Skills = () => {
+const Skills: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSkills = () => {
@@ -13,7 +13,7 @@ const Skills = () => {
   };
 
   return (
-    <AnimatedWrapper className="flex justify-center">
+    <AnimatedWrapper className="flex justify-center z-20">
   <div className="flex flex-col items-start w-full lg:max-w-[43.3333%]">
       <div className="flex flex-row py-1">
         <SectionTitle title="Skills" />

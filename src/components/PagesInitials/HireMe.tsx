@@ -14,7 +14,7 @@ interface HireMeProps {
 const HireMe = (props: HireMeProps) => {
 
     return (
-        <AnimatedWrapper className="w-full flex flex-col items-start py-2 lg:max-w-[43.3333%]">
+        <AnimatedWrapper className="w-full flex z-20 flex-col items-start py-2 lg:max-w-[43.3333%]">
                 <SectionTitle title="HireMe"/>
 
              {props.htmlContent ? (

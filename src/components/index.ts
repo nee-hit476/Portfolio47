@@ -7,6 +7,7 @@ import InfoCard  from "./PagesInitials/InfoCard";
 import {AnimatedWrapper} from "./utils/AnimatedWrapper"
 import Navbar from "./PagesInitials/Navbar"
 import HireMe  from "./PagesInitials/HireMe";
+import ShootingStars from "./PagesInitials/ShootingStars";
 
 export {
     Available, 
@@ -17,5 +18,6 @@ export {
     AnimatedWrapper,
     InfoCard,
     Navbar,
-    HireMe
+    HireMe,
+    ShootingStars
 }

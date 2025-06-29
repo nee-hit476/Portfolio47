@@ -1,4 +1,4 @@
-import {LocalTime, Skills, InfoCard, Navbar, HireMe} from "./components"
+import {Skills, InfoCard, Navbar, HireMe} from "./components"
 import {NihitAbout} from "./Data/Personal"
 
 export default function App() {

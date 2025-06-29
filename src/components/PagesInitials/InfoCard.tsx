@@ -20,11 +20,11 @@ const InfoCard = ({htmlContent, children, className}: InfoCardProps) => {
                 <img 
                 src={ProfilePicture} 
                 alt="pfp"
-                className="rounded-lg h-[150px] w-[200px] sm:h-[150px] mr-7"
+                className="rounded-lg h-[130px] w-[200px] sm:h-[150px] mr-7"
                 />
             
                 <div>
-                    <div className="flex flex-row-reverse items-center justify-between mb-2">
+                    <div className="flex flex-row-reverse items-center justify-between mb-1">
                         <LocalTime className="text-sm font-bold justify-end " />
                         <SectionTitle title="About Me"/>
                     </div>

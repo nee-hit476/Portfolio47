@@ -1,5 +1,6 @@
 import {Skills, InfoCard, Navbar, HireMe} from "./components"
 import {NihitAbout} from "./Data/Personal"
+import {HireNihit} from "./Data/Personal"
 
 export default function App() {
   return (
@@ -14,10 +15,12 @@ export default function App() {
       
       <InfoCard
         htmlContent={NihitAbout}
-        className="w-full lg:max-w-[33.3333%] text-[1rem] m-2 mt-0 flex float-left  "
+        className="w-full lg:max-w-[43.3333%] text-[1rem] m-2 mt-0 flex float-left  "
       />
       <Skills />
-      <HireMe/>
+      <HireMe
+        htmlContent={HireNihit}
+      />
       <Navbar/>
     </div>
   );

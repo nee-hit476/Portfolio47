@@ -14,8 +14,8 @@ const Skills = () => {
 
   return (
     <AnimatedWrapper className="flex justify-center">
-  <div className="flex flex-col items-start w-full lg:max-w-[33.3333%]">
-      <div className="flex flex-row py-2">
+  <div className="flex flex-col items-start w-full lg:max-w-[43.3333%]">
+      <div className="flex flex-row py-1">
         <SectionTitle title="Skills" />
       </div>
 

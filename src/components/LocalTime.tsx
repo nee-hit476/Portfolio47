@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { AnimatedWrapper } from "./utils/AnimatedWrapper"
 
-const LocalTime = () => {
+const LocalTime = ({className} : {className: string}) => {
   const [time, setTime] = useState(new Date())
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const LocalTime = () => {
   }, [])
 
   return (
-    <AnimatedWrapper>
+    <AnimatedWrapper className={`flex text-lg font-bold ${className}`}>
       {time.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
     </AnimatedWrapper>
   )

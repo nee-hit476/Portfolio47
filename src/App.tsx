@@ -1,6 +1,5 @@
-import {LocalTime, Skills, InfoCard} from "./components"
+import {LocalTime, Skills, InfoCard, Navbar, HireMe} from "./components"
 import {NihitAbout} from "./Data/Personal"
-
 
 export default function App() {
   return (
@@ -10,13 +9,16 @@ export default function App() {
         backgroundSize: "8px 8px",
         backgroundRepeat: "repeat",
       }}
-      className="min-h-screen min-w-screen flex flex-col justify-center items-center text-2xl bg-[#000000] text-white"
+      className="min-h-screen min-w-screen flex flex-col items-center pt-5 text-2xl bg-[#000000] text-white overflow-hidden p-2"
     >
+      
       <InfoCard
         htmlContent={NihitAbout}
-        className="max-w-1/3 text-[1rem] m-2 mt-0 flex float-left"
+        className="w-full lg:max-w-[33.3333%] text-[1rem] m-2 mt-0 flex float-left  "
       />
       <Skills />
+      <HireMe/>
+      <Navbar/>
     </div>
   );
 }

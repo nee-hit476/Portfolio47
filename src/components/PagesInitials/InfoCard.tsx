@@ -3,6 +3,7 @@ import { AnimatedWrapper } from "../utils/AnimatedWrapper"
 import {SectionTitle} from "../index"
 import { motion } from "framer-motion"
 import {ProfilePicture} from "../../Data/Personal"
+import {LocalTime} from "../index"
 
 
 interface InfoCardProps {
@@ -19,11 +20,14 @@ const InfoCard = ({htmlContent, children, className}: InfoCardProps) => {
                 <img 
                 src={ProfilePicture} 
                 alt="pfp"
-                className="rounded-lg h-[100px] w-[200px] mr-7"
+                className="rounded-lg h-[150px] w-[200px] sm:h-[150px] mr-7"
                 />
             
                 <div>
-                    <SectionTitle title="About Me"/>
+                    <div className="flex flex-row-reverse items-center justify-between mb-2">
+                        <LocalTime className="text-sm font-bold justify-end " />
+                        <SectionTitle title="About Me"/>
+                    </div>
 
             {htmlContent ? (
                 <motion.div

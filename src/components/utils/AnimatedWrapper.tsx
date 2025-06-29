@@ -12,13 +12,13 @@ interface AnimatedWrapperProps {
 export const AnimatedWrapper = ({ children, className, delay = 0 }: AnimatedWrapperProps) => {
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
+    <motion.div 
+      initial={{ opacity: 10, y: 0 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
-        duration: 1,
+        duration: 0.3,
         delay: delay,
-        ease: "easeOut",
+        ease: "easeInOut",
       }}
       className={className ? className : ""}
     >

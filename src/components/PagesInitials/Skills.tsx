@@ -3,18 +3,19 @@ import { SectionTitle } from "../index";
 import { Skills as SkillsData } from "../../Data/Skills";
 import { motion } from "framer-motion";
 import {AnimatedWrapper} from "../index"
+import {Available} from "../index"
 
 const Skills = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <AnimatedWrapper className="flex justify-center">
-    <div className="flex flex-col items-start max-w-1/3">
-      <div className="flex flex-row">
+  <div className="flex flex-col items-start w-full lg:max-w-[33.3333%]">
+      <div className="flex flex-row py-2">
         <SectionTitle title="Skills" />
       </div>
 
-      <div className="flex gap-1 flex-wrap font-bold">
+      <div className="flex gap-1 flex-wrap font-bold ">
         {SkillsData.map((skill, index) => (
           <motion.div
             layout
@@ -22,9 +23,10 @@ const Skills = () => {
             animate={{ width: "auto" }}
             transition={{ duration: 0.5 }}
             key={index}
-            className={`py-0.5 px-1.5 flex flex-row items-center gap-0.5 text-xs border rounded-lg border-dashed ${
-              !isOpen ? "overflow-hidden" : ""
-            }`}
+            className={`py-0.5 px-1.5 flex items-center gap-0.5 text-xs border rounded-lg border-dashed
+            hover:z-1 hover:scale-150 transition-transform duration-200 ease-in-out
+            ${!isOpen ? "overflow-hidden" : ""}`}
+
           >
             <skill.icon
               className={
@@ -34,6 +36,7 @@ const Skills = () => {
             <span>{skill.name}</span>
           </motion.div>
         ))}
+        <Available text="Available"/>
       </div>
     </div>
     </AnimatedWrapper>

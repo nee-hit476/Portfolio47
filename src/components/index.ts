@@ -5,6 +5,8 @@ import Skills from "./PagesInitials/Skills"
 import SectionTitle from "./SectionTitle";
 import InfoCard  from "./PagesInitials/InfoCard";
 import {AnimatedWrapper} from "./utils/AnimatedWrapper"
+import Navbar from "./PagesInitials/Navbar"
+import HireMe  from "./PagesInitials/HireMe";
 
 export {
     Available, 
@@ -13,5 +15,7 @@ export {
     Skills, 
     SectionTitle, 
     AnimatedWrapper,
-    InfoCard
+    InfoCard,
+    Navbar,
+    HireMe
 }

@@ -11,6 +11,7 @@ interface HireMeProps {
     className?: string
 }
 
+// Hire me tsx
 const HireMe = (props: HireMeProps) => {
 
     return (

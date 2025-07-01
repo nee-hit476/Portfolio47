@@ -23,7 +23,7 @@ const HireMe = (props: HireMeProps) => {
                     layout
                     initial={{ width: 40 }}
                     animate={{ width: "auto" }}
-                    transition={{ duration: 0.5 }} 
+                    transition={{ duration: 0.6 }} 
                     dangerouslySetInnerHTML={{ __html: props.htmlContent }} 
                     className="text-[1rem]"
                     />

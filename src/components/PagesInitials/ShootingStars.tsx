@@ -20,7 +20,7 @@ const ShootingStars = () => {
         x: Math.random() * window.innerWidth,
         y: -10,
         speed: Math.random() * 7 + 2,
-        length: Math.random() * 50 + 40,
+        length: Math.random() * 10 + 40,
         opacity: Math.random() * 0.8 + 0.2,
         angle: Math.random() * 40 + 15, // 15-45 degrees
       };
@@ -31,7 +31,7 @@ const ShootingStars = () => {
       setStars(prevStars => {
         const newStars = [...prevStars, createStar()];
         // Limit to 15 stars maximum
-        return newStars.slice(-100);
+        return newStars.slice(1);
       });
     };
 
@@ -52,7 +52,7 @@ const ShootingStars = () => {
       if (Math.random() < 0.8) { // 70% chance to add a star
         addStar();
       }
-    }, Math.random() * 1000 + 800);
+    }, Math.random() * 100 + 800);
 
     // Update star positions every 50ms
     const updateInterval = setInterval(updateStars, 100);
@@ -64,8 +64,9 @@ const ShootingStars = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-10">
-      {stars.map(star => (
+    <div className="fixed inset-0 pointer-events-none z-10 lg:hidden">
+      <div className='w-full lg:w-[43.3333%]'>
+        {stars.map(star => (
         <div
           key={star.id}
           className="absolute"
@@ -97,6 +98,7 @@ const ShootingStars = () => {
           />
         </div>
       ))}
+      </div>
       
       {/* Static background stars */}
       <div className="absolute inset-0">

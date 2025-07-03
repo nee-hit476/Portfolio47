@@ -33,7 +33,7 @@ const Skills: React.FC = () => {
             onMouseEnter={() => setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)}
             className={`py-0.5 px-1.5 flex items-center gap-0.5 text-xs border rounded-lg border-dashed
-            hover:z-1 hover:scale-150 transition-transform duration-200 ease-in-out
+            hover:z-1 hover:scale-150 hover:bg-gray-700 transition-transform duration-200 ease-in-out
             ${!isOpen ? "overflow-hidden" : ""}`}
 
           >

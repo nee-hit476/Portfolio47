@@ -3,15 +3,13 @@ import { AnimatedWrapper } from "../utils/AnimatedWrapper";
 import {motion} from "framer-motion";
 import { FaSuitcase } from "react-icons/fa";
 
-
-
 interface HireMeProps {
     htmlContent?: string,
     children?: React.ReactNode
     className?: string
 }
 
-// Hire me tsx
+// Hire me tsx => hire me button => would have an cv
 const HireMe = (props: HireMeProps) => {
 
     return (

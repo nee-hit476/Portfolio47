@@ -1,10 +1,29 @@
 import { SiBuymeacoffee, SiSolana, SiPhonepe} from "react-icons/si";
 import {FaEthereum } from "react-icons/fa";
+import {SectionTitle} from "../index"
+import { NihitSupport } from "../../Data/Personal";
+import { AnimatedWrapper } from "../utils/AnimatedWrapper"
+import {motion} from "framer-motion";
 
 const SupportMe = () => {
 
+
     return( 
-        <section className="flex flex-row items-center gap-2">
+        <AnimatedWrapper className="flex flex-col justify-start w-full lg:max-w-[43.3333%]">    
+            <SectionTitle title="Support Me"/>
+            {NihitSupport ? (
+                <motion.div
+                    layout
+                    initial={{ width: 40 }}
+                    animate={{ width: "auto" }}
+                    transition={{ duration: 0.6 }} 
+                    dangerouslySetInnerHTML={{ __html: NihitSupport }} 
+                    className="text-[1rem]"
+                    />
+            ) : (
+                NihitSupport
+            )}
+        <section className="flex flex-row items-center gap-2 py-2">
             <a href="" className="flex flex-row gap-0.5 items-center border-2 py-1 px-2 border-gray-400 rounded-lg text-xs hover:bg-gray-700 border-dashed">
                 <SiSolana />
                 <span>Solana</span>
@@ -34,6 +53,7 @@ const SupportMe = () => {
                 <span>Ethereum</span>
             </a>
         </section>
+        </AnimatedWrapper>
     )
 }
 

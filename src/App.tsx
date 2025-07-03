@@ -1,4 +1,4 @@
-import {Skills, InfoCard, Navbar, HireMe, ShootingStars} from "./components"
+import {Skills, InfoCard, Navbar, HireMe, ShootingStars, SupportMe} from "./components"
 import {NihitAbout} from "./Data/Personal"
 import {HireNihit} from "./Data/Personal"
 
@@ -22,6 +22,7 @@ export default function App() {
       <HireMe
         htmlContent={HireNihit}
       />
+      <SupportMe/>
       <Navbar/>
     </div>
   );

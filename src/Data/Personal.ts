@@ -6,8 +6,11 @@ const HireNihit: string = `<p>I’m currently available for internships, full-ti
 
 const ProfilePicture = nihit;
 
+const NihitSupport = `<p>If you love what I do, whether it’s my work, the content I share, or anything else, please consider supporting me. Your support helps me continue creating, improving, and sharing my work.</p>`
+
 export {
     NihitAbout,
     ProfilePicture,
-    HireNihit
+    HireNihit,
+    NihitSupport
 }

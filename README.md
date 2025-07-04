@@ -1,3 +1,6 @@
+# Update
+- It's a temporary portfolio . I'm working on to it shift all these into NextJS and create backend too for blogs and other.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

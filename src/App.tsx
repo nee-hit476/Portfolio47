@@ -2,6 +2,7 @@ import {Skills, Projects, InfoCard, Navbar, HireMe, ShootingStars, SupportMe} fr
 import {NihitAbout} from "./Data/Personal"
 import {HireNihit} from "./Data/Personal"
 
+
 export default function App() {
   return (
     <div
@@ -24,6 +25,9 @@ export default function App() {
       />
       <SupportMe/>
       <Projects/>
+
+      
+
       <Navbar/>
     </div>
   );

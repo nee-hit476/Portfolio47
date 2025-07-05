@@ -1,4 +1,8 @@
+import { FaGithubAlt, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 import nihit from "../assets/Images/pfp/nihit.jpeg"
+import type { ComponentType } from "react";
 
 const NihitAbout: string = `<p>Hey, I'm Nihit, a full stack developer. Primarily using JavaScript and its frameworks.I love to contribute and building things with people.(Not just an engineer). I'm currently working with Next.js, Django, Express, and TypeScript.</p>`
 
@@ -8,9 +12,42 @@ const ProfilePicture = nihit;
 
 const NihitSupport = `<p>If you love what I do, whether it’s my work, the content I share, or anything else, please consider supporting me. Your support helps me continue creating, improving, and sharing my work.</p>`
 
+const Navlinks: {
+    id: string;
+    name: string;
+    link: string;
+    icon: ComponentType;
+}[] = [
+    {
+        id: "1",
+        name: "Github",
+        link: "https://github.com/nee-hit476",
+        icon: FaGithubAlt
+    },
+    {
+        id: "2",
+        name: "twitter",
+        link: "https://x.com/ins_Nihit",
+        icon: FaXTwitter
+    },
+    {
+        id: "3",
+        name: "linkedin",
+        link: "https://x.com/ins_Nihit",
+        icon: FaLinkedin
+    },
+    {
+        id: "4",
+        name: "leetcode",
+        link: "https://github.com/nee-hit476",
+        icon: SiLeetcode
+    }
+]
+
 export {
     NihitAbout,
     ProfilePicture,
     HireNihit,
-    NihitSupport
+    NihitSupport,
+    Navlinks
 }

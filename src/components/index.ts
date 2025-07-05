@@ -9,6 +9,7 @@ import Navbar from "./PagesInitials/Navbar"
 import HireMe  from "./PagesInitials/HireMe";
 import ShootingStars from "./PagesInitials/ShootingStars";
 import Projects from "./PagesInitials/Projects";
+import PopUp from "./PagesInitials/PopUp";
 
 export {
     Available, 
@@ -21,5 +22,6 @@ export {
     Navbar,
     HireMe,
     ShootingStars,
-    Projects
+    Projects,
+    PopUp
 }

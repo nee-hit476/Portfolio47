@@ -13,6 +13,7 @@ export default function App() {
       }}
       className="min-h-screen min-w-screen flex flex-col items-center pt-5 text-2xl bg-[#000000] text-white overflow-hidden p-2"
     >
+      // Shooting Stars component
       <ShootingStars/>
       
       <InfoCard

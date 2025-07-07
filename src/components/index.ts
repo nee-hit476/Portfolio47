@@ -10,6 +10,7 @@ import HireMe  from "./PagesInitials/HireMe";
 import ShootingStars from "./PagesInitials/ShootingStars";
 import Projects from "./PagesInitials/Projects";
 import PopUp from "./PagesInitials/PopUp";
+import ProjectInfoTip from "./PagesInitials/ProjectInfoTip";
 
 export {
     Available, 
@@ -23,5 +24,6 @@ export {
     HireMe,
     ShootingStars,
     Projects,
-    PopUp
+    PopUp,
+    ProjectInfoTip
 }

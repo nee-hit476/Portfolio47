@@ -1,4 +1,4 @@
-import {Skills, Projects, InfoCard, Navbar, HireMe, ShootingStars, SupportMe} from "./components"
+import {Skills, ProjectInfoTip, Projects, InfoCard, Navbar, HireMe, ShootingStars, SupportMe} from "./components"
 import {NihitAbout} from "./Data/Personal"
 import {HireNihit} from "./Data/Personal"
 
@@ -27,7 +27,7 @@ export default function App() {
       <SupportMe/>
       <Projects/>
 
-      
+      <ProjectInfoTip/>
 
       <Navbar/>
     </div>

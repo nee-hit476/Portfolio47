@@ -2,14 +2,13 @@ import { FaGithubAlt, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 import nihit from "../assets/Images/pfp/nihit.jpeg"
-import type { ComponentType } from "react";
-
+import { type ComponentType } from "react";
 
 export interface Project {
   id: string;
   title: string;
   description: string;
-  image: string;
+  desc: string;
   status: 'Running' | 'Completed' | 'In Progress';
   technologies: string[];
   viewLink?: string;
@@ -63,7 +62,16 @@ const projects: Project[] = [
       id: '3',
       title: 'Portfolio Website',
       description: 'A modern, responsive portfolio website showcasing my work and skills. Built with cutting-edge technologies and featuring smooth animations, dark mode support, and an intuitive user interface.',
-      image: '/api/placeholder/160/120',
+      desc: `<iframe
+          src="https://player.cloudinary.com/embed/?cloud_name=ddyqtrozr&public_id=VID-20250708-WA0027_kuolh0&profile=cld-default&autoplay=true&loop=true&controls=false&mute=true"
+          width="640"
+          height="360" 
+          style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+          allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+          allowfullscreen
+          frameborder="0"
+          ></iframe>
+`,
       status: 'Completed',
       technologies: ['Next.js', 'TypeScript', 'Framer Motion', 'Tailwind CSS'],
       viewLink: '#',
@@ -74,7 +82,15 @@ const projects: Project[] = [
       id: '4',
       title: 'Portfolio Website',
       description: 'A modern, responsive portfolio website showcasing my work and skills. Built with cutting-edge technologies and featuring smooth animations, dark mode support, and an intuitive user interface.',
-      image: '/api/placeholder/160/120',
+      desc: `<iframe
+          src="https://player.cloudinary.com/embed/?cloud_name=ddyqtrozr&public_id=VID-20250708-WA0027_kuolh0&profile=cld-default&autoplay=true&loop=true&controls=false&mute=true"
+          width="640"
+          height="360" 
+          style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+          allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+          allowfullscreen
+          frameborder="0"
+          ></iframe>`,
       status: 'Completed',
       technologies: ['Next.js', 'TypeScript', 'Framer Motion', 'Tailwind CSS'],
       viewLink: '#',
@@ -85,7 +101,15 @@ const projects: Project[] = [
       id: '5',
       title: 'Portfolio Website',
       description: 'A modern, responsive portfolio website showcasing my work and skills. Built with cutting-edge technologies and featuring smooth animations, dark mode support, and an intuitive user interface.',
-      image: '/api/placeholder/160/120',
+      desc: `<iframe
+          src="https://player.cloudinary.com/embed/?cloud_name=ddyqtrozr&public_id=VID-20250708-WA0027_kuolh0&profile=cld-default&autoplay=true&loop=true&controls=false&mute=true"
+          width="640"
+          height="360" 
+          style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+          allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+          allowfullscreen
+          frameborder="0"
+          ></iframe>`,
       status: 'Completed',
       technologies: ['Next.js', 'TypeScript', 'Framer Motion', 'Tailwind CSS'],
       viewLink: '#',
@@ -96,7 +120,15 @@ const projects: Project[] = [
       id: '6',
       title: 'Portfolio Website',
       description: 'A modern, responsive portfolio website showcasing my work and skills. Built with cutting-edge technologies and featuring smooth animations, dark mode support, and an intuitive user interface.',
-      image: '/api/placeholder/160/120',
+      desc: `<iframe
+          src="https://player.cloudinary.com/embed/?cloud_name=ddyqtrozr&public_id=VID-20250708-WA0027_kuolh0&profile=cld-default&autoplay=true&loop=true&controls=false&mute=true"
+          width="640"
+          height="360" 
+          style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+          allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+          allowfullscreen
+          frameborder="0"
+          ></iframe>`,
       status: 'Completed',
       technologies: ['Next.js', 'TypeScript', 'Framer Motion', 'Tailwind CSS'],
       viewLink: '#',
@@ -107,7 +139,7 @@ const projects: Project[] = [
       id: '7',
       title: 'Portfolio Website',
       description: 'A modern, responsive portfolio website showcasing my work and skills. Built with cutting-edge technologies and featuring smooth animations, dark mode support, and an intuitive user interface.',
-      image: '/api/placeholder/160/120',
+      desc: '/api/placeholder/160/120',
       status: 'Completed',
       technologies: ['Next.js', 'TypeScript', 'Framer Motion', 'Tailwind CSS'],
       viewLink: '#',

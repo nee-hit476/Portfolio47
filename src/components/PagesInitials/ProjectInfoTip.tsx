@@ -45,26 +45,23 @@ const ProjectInfoTip: React.FC = () => {
         >
           {/* Project Image */}
           <div className="flex-shrink-0">
-            <div className="w-40 h-28 bg-amber-700 rounded-lg overflow-hidden">
-              <img 
-                src={project.image} 
-                alt={project.title}
-                className="w-full h-full object-cover"
-              />
+            <div className="w-40 h-30 rounded-lg overflow-hidden">
+              {<div dangerouslySetInnerHTML={{ __html: project.desc }} />}
             </div>
           </div>
 
           {/* Project Details */}
           <div className="flex-1 min-w-0">
             <div className="flex items-center justify-between mb-2">
-              <div className="flex items-center gap-3">
-                <h3 className="text-xl font-semibold text-white">{project.title}</h3>
+              <div className="flex items-center gap-2">
+                <h3 className="text-sm font-semibold text-white">{project.title}</h3>
                 <div className="flex items-center gap-1">
                   <div className={`w-2 h-2 rounded-full ${getStatusColor(project.status)}`}></div>
                   <span className="text-sm text-green-400">{project.status}</span>
                 </div>
               </div>
               
+
               {/* Action Icons */}
               <div className="flex items-center gap-2">
                 {project.viewLink && (

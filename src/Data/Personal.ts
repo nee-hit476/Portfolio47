@@ -1,7 +1,7 @@
 import { FaGithubAlt, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
-import nihit from "../assets/Images/pfp/nihit.jpeg"
+import nihit from "../assets/Images/pfp/nihit.jpg"
 import { type ComponentType } from "react";
 
 export interface Project {
@@ -91,7 +91,7 @@ const projects: Project[] = [
           allowfullscreen
           frameborder="0"
           ></iframe>`,
-      status: 'Completed',
+      status: 'Running',
       technologies: ['Next.js', 'TypeScript', 'Framer Motion', 'Tailwind CSS'],
       viewLink: '#',
       githubLink: '#',
@@ -129,7 +129,7 @@ const projects: Project[] = [
           allowfullscreen
           frameborder="0"
           ></iframe>`,
-      status: 'Completed',
+      status: 'Running',
       technologies: ['Next.js', 'TypeScript', 'Framer Motion', 'Tailwind CSS'],
       viewLink: '#',
       githubLink: '#',

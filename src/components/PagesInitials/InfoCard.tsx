@@ -1,4 +1,3 @@
-import React from "react"
 import { AnimatedWrapper } from "../utils/AnimatedWrapper"
 import {SectionTitle} from "../index"
 import { motion } from "framer-motion"

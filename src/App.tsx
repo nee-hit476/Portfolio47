@@ -2,7 +2,6 @@ import {Skills, ProjectInfoTip, Projects, InfoCard, Navbar, HireMe, ShootingStar
 import {NihitAbout} from "./Data/Personal"
 import {HireNihit} from "./Data/Personal"
 
-
 export default function App() {
   return (
     <div

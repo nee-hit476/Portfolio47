@@ -23,7 +23,7 @@ const SupportMe = () => {
             ) : (
                 NihitSupport
             )}
-        <section className="flex flex-row items-center gap-2 py-2">
+        <section className="flex flex-row items-center gap-2 py-2 flex-wrap">
             <a href="" className="flex flex-row gap-0.5 items-center border-2 py-1 px-2 border-gray-400 rounded-lg text-xs hover:bg-gray-700 border-dashed">
                 <SiSolana />
                 <span>Solana</span>
